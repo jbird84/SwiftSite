@@ -57,4 +57,12 @@ extension ContactLink {
             icon: "fab fa-twitter-square"
         )
     }
+    
+    //This is your GitHub info
+    static var gitHub: ContactLink {
+        return ContactLink(
+            title: "GitHub",
+            url: "https://github.com/jbird84",
+            icon: "fab fa-github-square")
+    }
 }

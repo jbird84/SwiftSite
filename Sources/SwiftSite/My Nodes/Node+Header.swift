@@ -3,7 +3,7 @@
 import Plot
 
 extension Node where Context == HTML.BodyContext {
-    private static var sections: [SwiftSite.SectionID] { [ SwiftSite.SectionID.resume] }
+    private static var sections: [SwiftSite.SectionID] { [ SwiftSite.SectionID.videos, SwiftSite.SectionID.about, SwiftSite.SectionID.resume] }
     
     static func header(for site: SwiftSite) -> Node {
         return .div(

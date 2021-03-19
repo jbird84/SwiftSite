@@ -15,6 +15,8 @@ struct SwiftSite: Website {
         // Add the sections that you want your website to contain here:
         case posts
         case resume
+        case videos
+        case about
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -23,10 +25,10 @@ struct SwiftSite: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
-    var title = "My Publish Site"
-    var name = "Josh Kinney"
-    var description = "Content-Creator/Developer"
+    var title = "Swift Site"
+    var name = "Ron Dale"
+    var description = "Painter"
     var language: Language { .english }
     var imagePath: Path? { nil }
-    var contactMe: [ContactLink] { [.myLocation, .email, .youTube, .linkedIn, .twitter] }
+    var contactMe: [ContactLink] { [.myLocation, .email, .youTube, .linkedIn, .twitter, .gitHub] }
 }
